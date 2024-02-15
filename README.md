@@ -9,29 +9,58 @@ The dataset consists of images depicting various plant leaf diseases such as App
 Project Overview
 
 In this project, we utilized Keras for implementation. The main steps involved:
-Dataset Loading and Preprocessing: Two classes were defined for loading and preprocessing the dataset. Due to variations in image dimensions, they were standardized to (160,160). Images were read in RGB format using OpenCV.
+Dataset Loading and Preprocessing: 
 
-Data Splitting: The dataset was split into training, validation, and test sets using a ratio of 70:15:15, respectively.
-Model Architecture: The UNet architecture with EfficientNetB3 as the backbone was employed for disease segmentation.
-Loss Function: Two loss functions were used for optimization:
+Two classes were defined for loading and preprocessing the dataset. Due to variations in image dimensions, they were standardized to (160,160). Images were read in RGB format using OpenCV.
+
+Data Splitting: 
+
+The dataset was split into training, validation, and test sets using a ratio of 70:15:15, respectively.
+
+Model Architecture: 
+
+The UNet architecture with EfficientNetB3 as the backbone was employed for disease segmentation.
+
+Loss Function: 
+
+Two loss functions were used for optimization:
+
 Dice Loss
+
 Binary Focal Loss
+
 The total loss was calculated as a combination of the two.
 
-Training: The model was trained for 10 epochs with a batch size of 8. Achieved metrics include:
+Training: 
+
+The model was trained for 10 epochs with a batch size of 8. Achieved metrics include:
+
 Training Accuracy: 96.93%
+
 Validation Accuracy: 92.65%
 
 Training loss: 0.0446
+
 Validation loss: 0.1101
+
 Test loss: 0.1528
+
 Training IoU Score: 0.9626
+
 Validation IoU Score: 0.9121
+
 Test IoU Score: 0.9059
+
 Training F1 Score: 0.9809
+
 Validation F1 Score: 0.9524
+
 Test F1 Score: 0.8746
-Evaluation: Predicted segmented masks were overlaid on test images for visual assessment. Some of the predicted masks along with original images and ground truths are also attatched.
+
+Evaluation:
+
+Predicted segmented masks were overlaid on test images for visual assessment. Some of the predicted masks along with original images and ground truths are also attatched.
+
 Inspiration for project:
 
 This project aims to address the challenge of detecting diseases in plant leaves through image segmentation, potentially aiding in early disease diagnosis and crop management strategies.
