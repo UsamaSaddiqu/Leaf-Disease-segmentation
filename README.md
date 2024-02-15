@@ -1,8 +1,11 @@
 # Leaf-Disease-segmentation
 A deep learning project for segmenting diseases in plant leaves. Utilizes UNet architecture with EfficientNetB3 as backbone for accurate segmentation.
-Plant Leaf Disease Segmentation
+
+**Plant Leaf Disease Segmentation**
 
 This repository contains a project for segmenting diseases in plant leaves using deep learning techniques. The dataset used in this project is sourced from Kaggle, consisting of 2940 images of diseased leaves along with their corresponding masks. The data collection is based on the PlantDoc images. There are no train test splits.
+
+
 **Dataset Details**
 
 The dataset consists of images depicting various plant leaf diseases such as Apple Scab Leaf, Apple rust leaf, Bell pepper leaf spot, Corn leaf blight, Potato leaf early blight, among others. Each image is accompanied by a mask containing both the background and the diseased regions.
