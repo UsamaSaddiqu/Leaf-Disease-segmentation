@@ -6,9 +6,11 @@ This repository contains a project for segmenting diseases in plant leaves using
 **Dataset Details**
 
 The dataset consists of images depicting various plant leaf diseases such as Apple Scab Leaf, Apple rust leaf, Bell pepper leaf spot, Corn leaf blight, Potato leaf early blight, among others. Each image is accompanied by a mask containing both the background and the diseased regions.
+
 **Project Overview**
 
 In this project, we utilized Keras for implementation. The main steps involved:
+
 **Dataset Loading and Preprocessing:** 
 
 Two classes were defined for loading and preprocessing the dataset. Due to variations in image dimensions, they were standardized to (160,160). Images were read in RGB format using OpenCV.
